@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Flower Market</title>
 </head>
-<body class="font-[inter]">
+<body class="font-[inter] selection:bg-[#e95a086b]">
     
     <header class="max-w-[95%] md:max-w-[85%] mx-auto flex justify-between items-center my-5">
         <img src="./assets/logo.png" alt="logo">
@@ -36,9 +36,7 @@
         </div>
     </header>
     <main>
-        <!-- bgm -->
-        <audio src="./assets/bgm.mp3" autoplay loop></audio>
-
+       
         <!-- hero section -->
         <section class="md:max-w-[85%] md:mx-auto md:flex md:flex-row-reverse md:items-end md:my-28">
             <img src="./assets/hero-flower.png" alt="hero-flower" class="w-full md:max-w-[100%]">
@@ -201,5 +199,10 @@
             <a href=""><img src="./assets/icon-youtube.png"></a>
         </div>
     </footer>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+                e.preventDefault(); // Prevents the default right-click context menu
+            });
+    </script>
 </body>
 </html>
